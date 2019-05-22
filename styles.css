@@ -360,6 +360,7 @@ body:before{
   margin: 0 auto;
   margin-top: 0px;
   margin-top: 6.5em;
+	z-index: 1;
 }
 .tapa {
   position: absolute;
@@ -368,6 +369,9 @@ body:before{
   height: 25.35em;
   width: 100%;
   z-index: 3;
+	background-image: url("images/paper2.png");
+	background-size: 100% 100%;
+	background-position: top;
 }
 .tapa-mobile{
 	position: absolute;
@@ -387,7 +391,7 @@ body:before{
   z-index: 4;
 }
 .banner header h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1em;
   color: white;
   text-transform: capitalize;
@@ -407,6 +411,7 @@ body:before{
   font-size: 1.75em;
   font-weight: 300;
   text-shadow: 0px 0px 5px black;
+	font-weight: bolder;
 }
 .banner header a {
   font-size: 1.75em;
@@ -480,12 +485,6 @@ body:before{
   }
 }
 @media(max-width:1200px){
-  .banner header h1 {
-    font-size: 2.5em;
-  }
-  .banner header h2 {
-    font-size: 1.5em;
-  }
   .banner header a {
     font-size: 1.5em;
   }
@@ -505,7 +504,20 @@ body:before{
     font-size: 12px;
   }
 }
+.banner .overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0000004d;
+	display: none;
+	z-index: 2;
+}
 @media(max-width:600px){
+	.banner .overlay{
+		display: block;
+	}
   .top-section {
     font-size: 11px;
   }
@@ -513,17 +525,32 @@ body:before{
     right: 0;
     top: 0;
     width: 100%;
-    background-color: #0000004d;
     height: 100%;
     padding-top: 4em;
   }
-  .banner header h1 {
-    font-size: 2.5em;
-  }
+	.tapa {
+    height: 28.35em;
+	}
+	.banner {
+    height: 23.5em;
+	}
+	.banner header h1 br{
+		display: none;
+	}
+	.banner header h1 {
+		width: 6em;
+		margin: 0 auto;
+	}
 }
 @media(max-width:450px){
+	.tapa {
+	  background-image: url("images/tapaMoblie.png");
+	  background-position: bottom;
+	  background-size: 100%;
+    height: 27.35em;
+	}
   .top-section {
-    font-size: 10px;
+    font-size: 11px;
   }
   .gallery ul li {
     height: 11em;
@@ -534,24 +561,21 @@ body:before{
 }
 @media(max-width:400px){
   .banner {
-    margin-top: 6em;
+    margin-top: 5em;
   }
   .banner header {
-      padding-top: 2em;
-  }
-  .banner header h1 {
-    font-size: 2em;
+    padding-top: 4em;
   }
   .banner header a {
-    font-size: 1.25em;
     border: 5px double gold;
   }
-  .banner {
-    height: 17.5em;
-  }
-  .tapa {
-    height: 21.35em;
-  }
+	.banner {
+	  height: 25.5em;
+	  background-position: 10% 0%;
+	}
+	.tapa {
+	  height: 28.35em;
+	}
   .gallery {
     width: 100%;
     padding-top: 2.5em;
@@ -847,11 +871,6 @@ body:before{
     width: 90%;
   }
 }
-@media(max-width:450px){
-  .package-info-wrapper{
-    font-size: 10px;
-  }
-}
 /*detail-wrapper*/
 
 .detail-wrapper{
@@ -1036,16 +1055,15 @@ body:before{
   line-height: 1em;
 }
 .article-section p {
-  font-size: 1.1em;
-  line-height: 2em;
-  background-color: rgba(255,255,255,0.6);
-  box-shadow: 0px 0px 20px 4px white;
-  padding: 1em;
+    font-size: 1.25em;
+    line-height: 2em;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 20px 4px white;
 }
-.article-section a{
+.article-section a {
   display: inline-block;
   line-height: 1em;
-  font-size: 1.1em;
+  font-size: 1.5em;
   text-transform: capitalize;
   padding: 0.25em 2.5em;
   border-radius: 2em;
@@ -1072,7 +1090,7 @@ body:before{
 }
 @media(max-width:1050px){
   .article-section header {
-    background-image: url("images/header2.png");
+    background-image: url("images/header2.jpg");
     background-size: 140%;
     background-position: 100% 100%;
     padding-left: 0em;
@@ -1104,8 +1122,24 @@ body:before{
 }
 @media(max-width:450px){
   .article-section{
-    font-size: 10px;
+    font-size: 12px;
   }
+	.article-section article {
+    padding-left: 5em;
+    padding-right: 5em;
+	}
+}
+@media(max-width:400px){
+	.article-section header {
+    height: 11em;
+	}
+	.article-section {
+    font-size: 11px;
+	}
+	.article-section article {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+	}
 }
 /* coverage section */
 .coverage-section{
@@ -1160,10 +1194,4 @@ body:before{
   }
 }
 @media(max-width:450px){
-  .coverage-section{
-    font-size: 12px;
-  }
-	.detail-box header h3 {
-    font-size: 1.75em;
-	}
 }
