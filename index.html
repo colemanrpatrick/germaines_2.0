@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>germaine's luau</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+  </head>
+  <body>
+    <div class="masthead-wrapper">
+      <div class="masthead">
+        <a href="#" class="logo"><img src="images/germaines_luau_logo.png"></a>
+        <nav class="main-nav" id="main-nav">
+          <section class="nav-left">
+            <a href="#">home</a>
+            <a href="#">gallery</a>
+            <a href="#">reservations</a>
+          </section>
+          <section class="nav-right">
+            <a href="#">buffet menu</a>
+            <a href="#">about us</a>
+            <a href="#">cart</a>
+          </section>
+        </nav>
+        <nav class="phone">
+          <section>
+            <a href="tel:1-877-357-2480">(toll free) 877 357 2480</a>
+          </section>
+          <section>
+            <a href="tel:1-877-357-2480">(local) 877 357 2480</a>
+          </section>
+        </nav>
+        <button type="button" class="menu-btn" name="button" id="menu-btn">
+          <hr class="menu-btn-hr-1"/>
+          <hr class="menu-btn-hr-2"/>
+          <hr class="menu-btn-hr-3"/>
+        </button>
+      </div>
+      <img class="palm palm-left" src="images/palm_img.png" alt="">
+      <img class="palm palm-right" src="images/palm_img.png" alt="">
+    </div>
+    <!-- ====================================== -->
+    <div class="wrapper">
+      <!-- top-section" -->
+      <div class="top-section">
+        <img class="tapa" src="images/paper2.png" alt="">
+        <div class="banner">
+        <header>
+          <h1>discount<br>germaine's luau<br>tickets</h1>
+          <h2>reserve your tickets now!</h2>
+          <a href="/reservations.htm">reservations</a>
+        </header>
+        </div>
+        <div class="gallery">
+          <ul>
+            <li><div></div><img id="img1" src="images/fire_dancer_germainesluau.jpg"></li>
+            <li><div></div><img id="img2" src="images/germaines-food.jpg"/></li>
+            <li><div></div><img id="img3" src="images/germaines3.jpg"/></li>
+          </ul>
+        </div>
+      <!-- ====== packages ====-->
+      </div>
+          <div class="package-info-wrapper">
+            <h3>choose an experience</h3>
+            <div class="package-info">
+              <div class="package-container">
+                <div class="package" id="package-1" onmouseover="idToggle('original','active')" onmouseout="idToggle('original','active')">
+                  <header>original package</header>
+                  <ul>
+                    <li>retail<span>$108.00</span></li>
+                    <li>discount<span>$98.00</span></li>
+                  </ul>
+                  <a href="#">book</br>now</a>
+                  <button type="button" name="button" onclick="idToggle('detail-1','active')">learn</br>more</button>
+                </div>
+                <div class="package" id="package-2" onmouseover="idToggle('hibiscus','active')" onmouseout="idToggle('hibiscus','active')">
+                  <header>hibiscus package</header>
+                  <ul>
+                    <li>retail<span>$141.00</span></li>
+                    <li>discount<span>$131.00</span></li>
+                  </ul>
+                  <a href="#">book</br>now</a>
+                  <button type="button" name="button">learn</br>more</button>
+                </div>
+                <div class="package" id="package-3" onmouseover="idToggle('plumeria','active')" onmouseout="idToggle('plumeria','active')">
+                  <header>plumeria package</header>
+                  <ul>
+                    <li>retail<span>$178.00</span></li>
+                    <li>discount<span>$168.00</span></li>
+                  </ul>
+                  <a href="#">book</br>now</a>
+                  <button type="button" name="button">learn</br>more</button>
+                </div>
+              </div>
+              <div class="map-cont">
+                <div class="map">
+                  <div id="stage"> <span>stage</span> </div>
+                  <div id="plumeria"><span>plumeria</span></div>
+                  <div id="original">
+                    <section><span>original</span></section>
+                    <section><span>original</span></section>
+                  </div>
+                  <div id="hibiscus"><span>hibiscus</span></div>
+                  <div id="main-bar"><span>bar</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- === -->
+          </div>
+
+          <div class='detail-wrapper' id="detail-1">
+            <div class="detail-box">
+              <header> <h3>original seating package</h3> <button type="button" name="button" class="close" onclick="idToggle('detail-1','active')"><i class="material-icons">close</i></button> </header>
+              <p>includes...</p>
+              <ul>
+                <li><i class="material-icons">filter_vintage</i><p> shell lei greeting</p></li>
+                <li><i class="material-icons">filter_vintage</i><p> all you can eat hawaiian/americano buffet (unlimited refills)</p></li>
+                <li><i class="material-icons">filter_vintage</i><p> one redeemable standard alchoholic drink ticket (for adult 21+)</p></li>
+                <li><i class="material-icons">filter_vintage</i><p> unlimited soft drinks, hot coffee, & tea</li>
+              </ul>
+              <a href="#">book<br>now</a>
+            </div>
+          </div>
+    <!-- === -->
+          <div class="article-section">
+            <header>
+              <span>aloha</span>
+              <br/>
+              <span>Welcome to Germaine's Luau!</span>
+            </header>
+            <article>
+              <p>Come experience a traditional Hawaiian luau that recaptures the "Spirit of Old Hawaii." Held at an exclusive beachfront property on Oahu's beautiful west side, Germaine's Luau has been acclaimed as America's Best Luau in "America’s Best 100" and has been filmed by ABC's "Good Morning America."</p>
+              <a href="#">read<br>more</a>
+            </article>
+            </div>
+    <!-- === -->
+        <div class="coverage-section">
+          <div class="coverage-box">
+            <ul>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+            </ul>
+            <header>Germaines luau Honolulu</header>
+            <p>Absolutely amazing They pick you up from your hotel and drop you back at the end of the night. The show was brilliant and sll the staff were fantastic. The food was brilliant and so much of it. This is a must do experience</p>
+            <p><span>Date of experience:</span>may 2019</p>
+          </div>
+
+          <div class="coverage-box">
+            <ul>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+            </ul>
+            <header>Germaines luau Honolulu</header>
+            <p>Absolutely amazing They pick you up from your hotel and drop you back at the end of the night. The show was brilliant and sll the staff were fantastic. The food was brilliant and so much of it. This is a must do experience</p>
+            <p><span>Date of experience:</span>may 2019</p>
+          </div>
+
+          <div class="coverage-box">
+            <ul>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+              <li><i class="material-icons">radio_button_checked</i></li>
+            </ul>
+            <header>Germaines luau Honolulu</header>
+            <p>Absolutely amazing They pick you up from your hotel and drop you back at the end of the night. The show was brilliant and sll the staff were fantastic. The food was brilliant and so much of it. This is a must do experience</p>
+            <p><span>Date of experience:</span>may 2019</p>
+          </div>
+        </div>
+        <!-- === -->
+        </div>
+        <script type="text/javascript" src="toggle.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
