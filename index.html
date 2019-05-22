@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8"/>
     <title>germaine's luau discount</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400|Lobster" rel="stylesheet">
@@ -24,7 +25,7 @@
             <a href="#">cart</a>
           </section>
         </nav>
-        <nav class="phone">
+        <nav class="phone" id="phone">
           <section>
             <a href="tel:1-877-357-2480">(toll free) 877 357 2480</a>
           </section>
@@ -32,6 +33,7 @@
             <a href="tel:1-877-357-2480">(local) 877 357 2480</a>
           </section>
         </nav>
+        <button type="button" name="button" id="phone-btn" class="phone-btn" onclick="idToggle('phone','active');idToggle('phone-btn','acitve');"><i class="material-icons">contact_phone</i></button>
         <button type="button" class="menu-btn" name="button" id="menu-btn">
           <hr class="menu-btn-hr-1"/>
           <hr class="menu-btn-hr-2"/>
@@ -56,9 +58,9 @@
         </div>
         <div class="gallery">
           <ul>
-            <li><div></div><img id="img1" src="images/fire_dancer_germainesluau.jpg"></li>
-            <li><div></div><img id="img2" src="images/germaines-food.jpg"/></li>
-            <li><div></div><img id="img3" src="images/germaines3.jpg"/></li>
+            <li><div></div><img id="img1" src="images/germainesluau_images.jpg"></li>
+            <li><div></div><img id="img2" src="images/germainesluau_images.jpg"/></li>
+            <li><div></div><img id="img3" src="images/germainesluau_images.jpg"/></li>
           </ul>
         </div>
       <!-- ====== packages ====-->
@@ -179,6 +181,40 @@
         </div>
         <!-- === -->
         </div>
+        <!-- === -->
+        <footer>
+          <ul>
+            <li>
+              <img class="logo-footer" src="images/germaines_luau_logo.png">
+              <p>
+                91-119 Olai Street<br>
+                Kapolei, Hawaii 96707<br>
+              </p>
+              <p>
+                5:30pm - 8:30pm, Tuesday - Sunday
+              </p>
+            </li>
+            <li>
+              <span>navigation</span>
+              <a href="#">home</a>
+              <a href="#">gallery</a>
+              <a href="#">reservations</a>
+              <a href="#">buffet menu</a>
+              <a href="#">about us</a>
+              <a href="#">cart</a>
+            </li>
+            <li>
+              <span>follow us</span>
+                <div class="social">
+                  <a class="facebook-social" href="https://www.facebook.com/HawaiiDiscount"></a>
+                  <a class="twitter-social" href="https://twitter.com/hawaiidiscount"></a>
+                  <a class="youtube-social" href="https://www.youtube.com/hawaiidiscount"></a>
+                  <a class="pinterest-social" href="https://www.pinterest.com/hawaiidiscount/"></a>
+                </div>
+            </li>
+          </ul>
+        </footer>
+
         <script type="text/javascript" src="toggle.js"></script>
         <script type="text/javascript" src="main.js"></script>
   </body>
